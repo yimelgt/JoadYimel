@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,600&family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,7 @@ p {
     color: white;
     letter-spacing: 0.2em;
     margin: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .section {
@@ -26,6 +29,7 @@ p {
     display: flex;
     align-items: center;
     color: #fff;
+    
 }
 
 .s1 {
@@ -70,8 +74,10 @@ p {
     position: absolute;
     bottom: 3%;
     font-size: 40px;
-    left: 34.5%;
-    top: 36%;
+    display: block;
+    text-align: center;
+    left: 27.5%;
+    top: 15%;
 }
 
 .container-title h1 {
@@ -81,16 +87,37 @@ p {
     text-transform: bold;
     color: cadetblue;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .container-title p {
     font-size: 1.5rem;
     display: block;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 .icon-color {
     color: white;
+}
+
+.btn-download{
+    margin: 0 0 25px;
+    overflow: hidden;
+    position: absolute;
+    text-decoration: none;
+    font-size: 16px;
+    left: 34%;
+    top: 60%;
+    color: white;
+    padding: 20px;
+    letter-spacing: 3px;
+    display: block;
+    border: 2px solid white;
+}
+
+.btn-download:hover {
+    background-color: cadetblue;
 }
 
 .s1 .icon-container {
@@ -122,9 +149,10 @@ p {
 }
 
 .s2 h1 {
-    text-align: left;
-    margin-left: 2em;
-    font-size: 4rem;
+    text-align: center;
+    margin: .5em;
+    font-size: 3rem;
+    border-radius: 1px;
 }
 
 .s3 {
@@ -205,4 +233,114 @@ p {
 
 #fp-nav ul li .fp-tooltip {
     color: cadetblue;
+}
+
+@media screen and (max-width: 800px){
+        
+        .container-title {
+            left: 220px;
+            top: 200px;
+        }
+        
+        .container-title h1 {
+            font-size: .5em;
+        }
+        .container-title p {
+            font-size: .5em;
+        }
+
+        .btn-download{
+            font-size: .3em;
+            left: 25%;
+            top: 50%;
+        }
+
+}
+
+@media screen and (max-width: 1920px){
+        
+    .container-title {
+        left: 33.5%;
+        top: 90px;
+    }
+    
+    .btn-download{
+        font-size: .3em;
+        left: 36%;
+        top: 60%;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+        
+    .container-title {
+        left: 26.6%;
+        top: 15%;
+    }
+    
+    .btn-download{
+        font-size: .3em;
+        left: 36%;
+        top: 60%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+        
+    .container-title {
+        left: 220px;
+        top: 200px;
+    }
+    
+    .container-title h1 {
+        font-size: .5em;
+    }
+    .container-title p {
+        font-size: .5em;
+    }
+
+    .btn-download{
+        font-size: .3em;
+        left: 25%;
+        top: 50%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+        
+    .container-title {
+        left: 21%;
+        top: 200px;
+    }
+    
+    .container-title h1 {
+        font-size: .5em;
+    }
+    .container-title p {
+        font-size: .5em;
+    }
+
+    .btn-download{
+        font-size: .3em;
+        left: 24%;
+        top: 50%;
+    }
+
+    .nav {
+    margin: 10px;
+    font-size: 10px;
+    right: 0%;
+    }
+
+    .brand img {
+        display: none;
+    }
+
+    .s4 h1 {
+       color: transparent;
+    }
+
 }
