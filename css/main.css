@@ -29,14 +29,11 @@ p {
     display: flex;
     align-items: center;
     color: #fff;
-    
+    text-align: center;
 }
 
 .s1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
+    position: relative;
 }
 
 .container-video {
@@ -69,55 +66,104 @@ p {
     opacity: .50;
 }
 
-.container-title {
+.container {
     z-index: 2;
     position: absolute;
     bottom: 3%;
     font-size: 40px;
-    display: block;
-    text-align: center;
-    left: 27.5%;
-    top: 15%;
+    transform: translateX(13%);
+    top: 20%;
 }
 
-.container-title h1 {
+.container-text {
+    border-left: 5px solid white;
+    padding-left: 30px;
+    position: relative;
+    left: 1%;
+}
+
+.container-btn {
+    text-align: center;
+}
+
+.container h1 {
     font-size: 50px;
-    margin-bottom: 0;
     text-transform: uppercase;
     text-transform: bold;
     color: cadetblue;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
-.container-title p {
+.container p {
     font-size: 1.5rem;
     display: block;
-    padding-bottom: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .icon-color {
     color: white;
 }
 
-.btn-download{
-    margin: 0 0 25px;
+.btn-download {
+    transform: translateX(4%);
+    top: 70%;
     overflow: hidden;
     position: absolute;
     text-decoration: none;
     font-size: 16px;
-    left: 34%;
-    top: 60%;
     color: white;
     padding: 20px;
     letter-spacing: 3px;
     display: block;
-    border: 2px solid white;
+    border: 3px solid white;
+    transition: .6s;
+    
+}
+
+.btn-download:focus {
+    outline: none;
+}
+
+.btn-download:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: cadetblue;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px), skewX(-15deg);
+}
+
+.btn-download::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: black;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px), scaleX(-15deg);
 }
 
 .btn-download:hover {
-    background-color: cadetblue;
+    background: black;
+    cursor: pointer;
+    color: cadetblue;
+    border: solid black;
+}
+
+.btn-download:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .1;
+    transition: .7s;  
 }
 
 .s1 .icon-container {
@@ -125,7 +171,9 @@ p {
     bottom: 3%;
     font-size: 40px;
     z-index: 99;
-    left: 48%;
+    position: absolute;
+    width: 30%;
+    left: 35%;
     animation: up-down 1s ease infinite;
 }
 
@@ -235,104 +283,44 @@ p {
     color: cadetblue;
 }
 
-@media screen and (max-width: 800px){
-        
-        .container-title {
-            left: 220px;
-            top: 200px;
-        }
-        
-        .container-title h1 {
-            font-size: .5em;
-        }
-        .container-title p {
-            font-size: .5em;
-        }
+@media screen and (max-width: 1920px) {}
 
-        .btn-download{
-            font-size: .3em;
-            left: 25%;
-            top: 50%;
-        }
+@media screen and (max-width: 1280px) {}
 
-}
+@media screen and (max-width: 800px) {
 
-@media screen and (max-width: 1920px){
-        
-    .container-title {
-        left: 33.5%;
-        top: 90px;
+    .container h1 {
+        font-size: 30px;
     }
     
-    .btn-download{
-        font-size: .3em;
-        left: 36%;
-        top: 60%;
+    .container p {
+        font-size: 1rem;
+    }
+
+    .btn-download {
+        font-size: 15px;
     }
 
 }
 
-@media screen and (max-width: 1280px){
-        
-    .container-title {
-        left: 26.6%;
-        top: 15%;
+@media screen and (max-width: 480px) {
+
+    .container h1 {
+        font-size: 25px;
     }
     
-    .btn-download{
-        font-size: .3em;
-        left: 36%;
-        top: 60%;
+    .container p {
+        font-size: 1rem;
     }
 
-}
-
-@media screen and (max-width: 800px){
-        
-    .container-title {
-        left: 220px;
-        top: 200px;
-    }
-    
-    .container-title h1 {
-        font-size: .5em;
-    }
-    .container-title p {
-        font-size: .5em;
-    }
-
-    .btn-download{
-        font-size: .3em;
-        left: 25%;
-        top: 50%;
-    }
-
-}
-
-@media screen and (max-width: 480px){
-        
-    .container-title {
-        left: 21%;
-        top: 200px;
-    }
-    
-    .container-title h1 {
-        font-size: .5em;
-    }
-    .container-title p {
-        font-size: .5em;
-    }
-
-    .btn-download{
-        font-size: .3em;
-        left: 24%;
-        top: 50%;
+    .btn-download {
+        font-size: 10px;
     }
 
     .nav {
-    margin: 10px;
-    font-size: 10px;
-    right: 0%;
+        margin: 10px;
+        font-size: 10px;
+        right: 0%;
     }
 
     .brand img {
@@ -340,7 +328,7 @@ p {
     }
 
     .s4 h1 {
-       color: transparent;
+        color: transparent;
     }
 
 }
