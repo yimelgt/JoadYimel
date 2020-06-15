@@ -63,7 +63,7 @@ p {
     left: 0;
     background: rgb(0, 0, 0);
     z-index: 1;
-    opacity: .50;
+    opacity: .65;
 }
 
 .container {
@@ -303,6 +303,36 @@ p {
 
 }
 
+@media screen and (max-width: 530px) {
+
+    .container h1 {
+        font-size: 25px;
+    }
+    
+    .container p {
+        font-size: 1rem;
+    }
+
+    .btn-download {
+        font-size: 10px;
+    }
+
+    .nav {
+        margin: 10px;
+        font-size: 10px;
+        right: 5%;
+    }
+
+    .brand img {
+        display: none;
+    }
+
+    .s4 h1 {
+        color: transparent;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
 
     .container h1 {
@@ -321,6 +351,48 @@ p {
         margin: 10px;
         font-size: 10px;
         right: 0%;
+    }
+
+    .brand img {
+        display: none;
+    }
+
+    .s4 h1 {
+        color: transparent;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .container {
+        top: 30%;
+    }
+
+    .container h1 {
+        font-size: 15px;
+    }
+    
+    .container p {
+        font-size: .7rem;
+    }
+
+    .btn-download {
+        font-size: 12px;
+        top: 55%;
+        left: 18%;
+    }
+
+    .nav {
+        width: 90%;
+        margin: -5px;
+        padding: 10px 20px;
+    }
+
+    .nav a {
+        margin: 10px;
+        font-size: 12px;
+        right: 50%;
     }
 
     .brand img {
