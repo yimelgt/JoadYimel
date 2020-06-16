@@ -61,9 +61,8 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.445);
     z-index: 1;
-    opacity: .65;
 }
 
 .container {
@@ -196,6 +195,12 @@ p {
     background-size: cover;
 }
 
+.container-about {
+    margin: 10px;
+    padding: 10px;
+}
+
+
 .s2 h1 {
     text-align: center;
     margin: .5em;
@@ -208,9 +213,78 @@ p {
     background-size: cover;
 }
 
-.s3 h1 {
+.s3 p {
+    position: absolute;
     text-align: center;
-    font-size: 2em;
+    transform: translateX(50%);
+    font-size: 22px;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+}
+
+#fp-slidesNav ul li a span, .fp-slidesNav.fp-bottom
+ul li a span  {
+    background: cadetblue;
+}
+
+.fp-slidesNav.fp-bottom {
+    right: 80%;
+}
+
+.s3 p {
+    text-align: left;
+}
+
+.s3 .info2 {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.s3 .info3 {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.s3 article {
+    background-position: center;
+    background-size: cover;
+    background: rgb(116, 114, 114);
+}
+
+.s3 article:nth-child(1){
+    background: url(../img/id.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.s3 article:nth-child(2){
+    background: url(../img/redesign.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.s3 article:nth-child(3){
+    background: url(../img/illustrations.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.s3 article:nth-child(4){
+    background: red;
+}
+
+.s3 article:nth-child(5){
+    background: red;
+}
+
+.s3 article:nth-child(6){
+    background: red;
 }
 
 .s4 {
@@ -222,8 +296,6 @@ p {
     text-align: left;
     padding: 100px;
     font-size: 2em;
-    border-top: 3px solid cadetblue;
-    border-bottom: 3px solid cadetblue;
 }
 
 .nav {
@@ -259,7 +331,7 @@ p {
 
 .menu li.active a,
 .menu li:hover a {
-    color: rgb(206, 240, 241);
+    color:rgb(121, 201, 204);
 }
 
 .nav li {
@@ -276,7 +348,7 @@ p {
 }
 
 #fp-nav ul li a span {
-    background: white;
+    background: cadetblue;
 }
 
 #fp-nav ul li .fp-tooltip {
@@ -348,9 +420,13 @@ p {
     }
 
     .nav {
+        display: none;
         margin: 10px;
         font-size: 10px;
         right: 0%;
+    }
+    .s3 .nav2 {
+        display: none;
     }
 
     .brand img {
@@ -384,6 +460,7 @@ p {
     }
 
     .nav {
+        display: none;
         width: 90%;
         margin: -5px;
         padding: 10px 20px;
@@ -393,6 +470,10 @@ p {
         margin: 10px;
         font-size: 12px;
         right: 50%;
+    }
+
+    .s3 .nav2 {
+        display: none
     }
 
     .brand img {

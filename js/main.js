@@ -19,5 +19,7 @@ new fullpage('#fullPage', {
     recordHistory: false,
     responsiveWidth: 0,
     responsiveHeight: 0,
+	responsiveSlides: true,
+
 });
 
