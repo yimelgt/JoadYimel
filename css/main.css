@@ -252,7 +252,7 @@ ul li a span  {
 }
 
 .s3 article:nth-child(1){
-    background: url(../img/id.png);
+    background: url(../img/id.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -260,7 +260,7 @@ ul li a span  {
 }
 
 .s3 article:nth-child(2){
-    background: url(../img/redesign.png);
+    background: url(../img/redesign.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -268,7 +268,7 @@ ul li a span  {
 }
 
 .s3 article:nth-child(3){
-    background: url(../img/illustrations.png);
+    background: url(../img/illustrations.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -408,7 +408,7 @@ ul li a span  {
 @media screen and (max-width: 480px) {
 
     .container h1 {
-        font-size: 25px;
+        font-size: 23px;
     }
     
     .container p {
@@ -450,7 +450,7 @@ ul li a span  {
     }
     
     .container p {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .btn-download {
