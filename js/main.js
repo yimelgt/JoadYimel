@@ -20,6 +20,4 @@ new fullpage('#fullPage', {
     responsiveWidth: 0,
     responsiveHeight: 0,
 	responsiveSlides: true,
-
 });
-
